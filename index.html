@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Maheza (mj7id) - Tutorial Kubernetes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px auto; max-width: 800px; line-height: 1.6; }
+    pre { background: #f5f5f5; padding: 10px; overflow-x: auto; }
+    h1, h2, h3 { color: #333; }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Tutorial by Maheza (mj7id)</h1>
+  <p>Selamat datang di blog sederhana ini. Kali ini saya akan membahas:</p>
+
+  <h2>📦 Cara Install Kubernetes dengan Kubeadm di Rocky/Alma/RHEL</h2>
+
+  <h3>Langkah 1: Update Sistem</h3>
+  <pre><code class="language-bash">sudo dnf update -y
+sudo dnf install -y yum-utils device-mapper-persistent-data lvm2</code></pre>
+
+  <h3>Langkah 2: Tambahkan Repository Docker</h3>
+  <pre><code class="language-bash">sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</code></pre>
+
+  <h3>Langkah 3: Install Docker</h3>
+  <pre><code class="language-bash">sudo dnf install docker-ce --nobest -y
+sudo systemctl enable --now docker</code></pre>
+
+  <p>...lanjutan tutorial akan ditambah lagi nanti</p>
+
+  <hr>
+  <footer>
+    <p>Copyright &copy; 2025 - Maheza (mj7id)</p>
+    <p><a href="https://github.com/mj7id">GitHub: @mj7id</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+</body>
+</html>
